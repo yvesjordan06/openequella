@@ -25,7 +25,7 @@ services:
       - EQ_USERSERVICE_USEXFORWARDEDFOR=true
       - EQ_ZOOKEEPER_INSTANCES=zookeeper
       - EQ_ZOOKEEPER_PREFIX=eqdev
-      - EQ_ADMIN_URL=http://oeq.localhost/admin/
+      - EQ_ADMIN_URL=https://equella.coolify-apps.hirodiscount.com/admin/
       - EQ_HIBERNATE_CONNECTION_URL=jdbc:postgresql://database:5432/equella
     depends_on:
       - zookeeper
