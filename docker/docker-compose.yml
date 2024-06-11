@@ -59,8 +59,8 @@ services:
     restart: always
     command: --api --docker
     ports:
-      - "8080:8080"
-      - "80:80"
+      - "9180:8080"
+      - "9801:80"
     networks:
       - oeq-cluster
     volumes:
