@@ -26,7 +26,7 @@
   <idtype>:</idtype>
 </datasource>
 <webserver>
-  <url>http://localhost:8080/admin/</url>
+  <url>https://equella.coolify-apps.hirodiscount.com/admin/</url>
   <binding>all</binding>
   <host>localhost</host>
   <port>8080</port>
