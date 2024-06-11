@@ -29,7 +29,7 @@ services:
       - EQ_HIBERNATE_CONNECTION_URL=jdbc:postgresql://database:5432/equella
     depends_on:
       - zookeeper
-    volumes:
+    #volumes:
       #- ./filestore:/home/equella/equella/filestore
       #- ./hikari.properties:/home/equella/equella/learningedge-config/hikari.properties
       #- ./learningedge-log4j.yaml:/home/equella/equella/learningedge-config/learningedge-log4j.yaml
