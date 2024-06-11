@@ -15,14 +15,14 @@ RUN useradd -ms /bin/bash equella \
   && rm -rf /var/lib/apt/lists/*
 
   RUN wget https://github.com/openequella/openEQUELLA/releases/download/2022.1.0/equella-installer-2022.1.0.zip \
-  && mv equella-installer-2022.1.0.zip docker/installer.zip
+  && mv equella-installer-2022.1.0.zip ./installer.zip
 
 # Install openEQUELLA
 FROM baseequella as installer
 
 ARG OEQ_INSTALL_FILE=installer.zip
 
-COPY ["$OEQ_INSTALL_FILE","defaults.xml", "./"]
+COPY ["defaults.xml", "./"]
 
 RUN unzip $OEQ_INSTALL_FILE -d /tmp \
   && mv /tmp/equella-installer-* /equella-installer \
