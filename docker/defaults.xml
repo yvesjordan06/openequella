@@ -21,8 +21,8 @@
   <host>localhost</host>
   <port>5432</port>
   <database>equella</database>
-  <username>equellauser</username>
-  <password>password</password>
+  <username>equella</username>
+  <password>equella</password>
   <idtype>:</idtype>
 </datasource>
 <webserver>
