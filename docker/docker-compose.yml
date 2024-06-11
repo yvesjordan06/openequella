@@ -31,8 +31,8 @@ services:
       - zookeeper
     volumes:
       - ./filestore:/home/equella/equella/filestore
-      - ./hikari.properties:/home/equella/equella/learningedge-config/hikari.properties
-      - ./learningedge-log4j.yaml:/home/equella/equella/learningedge-config/learningedge-log4j.yaml
+      #- ./hikari.properties:/home/equella/equella/learningedge-config/hikari.properties
+      #- ./learningedge-log4j.yaml:/home/equella/equella/learningedge-config/learningedge-log4j.yaml
 
   zookeeper:
     image: zookeeper:3.8.0
