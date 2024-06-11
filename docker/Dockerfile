@@ -15,7 +15,7 @@ RUN useradd -ms /bin/bash equella \
   && rm -rf /var/lib/apt/lists/*
 
   RUN wget https://github.com/openequella/openEQUELLA/releases/download/2022.1.0/equella-installer-2022.1.0.zip \
-  && mv equella-installer-2022.1.0.zip installer.zip
+  && mv equella-installer-2022.1.0.zip docker/installer.zip
 
 # Install openEQUELLA
 FROM baseequella as installer
