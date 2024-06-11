@@ -30,7 +30,7 @@ services:
     depends_on:
       - zookeeper
     volumes:
-      - ./filestore:/home/equella/equella/filestore
+      #- ./filestore:/home/equella/equella/filestore
       #- ./hikari.properties:/home/equella/equella/learningedge-config/hikari.properties
       #- ./learningedge-log4j.yaml:/home/equella/equella/learningedge-config/learningedge-log4j.yaml
 
