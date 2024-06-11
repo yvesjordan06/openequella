@@ -66,6 +66,6 @@ ENV EQ_HIBERNATE_CONNECTION_PASSWORD $EQ_HIBERNATE_CONNECTION_PASSWORD
 COPY --chown=equella:equella --from=installer /home/equella/equella /home/equella/equella
 WORKDIR /home/equella/equella
 USER equella
-#VOLUME ["/home/equella/equella/filestore/", "/home/equella/equella/freetext/"]
+VOLUME ["/home/equella/equella/filestore/", "/home/equella/equella/freetext/"]
 
 CMD java -Xmx${MEM}m $JVM_ARGS -cp learningedge-config:server/equella-server.jar com.tle.core.equella.runner.EQUELLAServer
